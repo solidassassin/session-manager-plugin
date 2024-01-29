@@ -17,9 +17,9 @@ package main
 import (
 	"os"
 
-	"github.com/aws/session-manager-plugin/src/sessionmanagerplugin/session"
-	_ "github.com/aws/session-manager-plugin/src/sessionmanagerplugin/session/portsession"
-	_ "github.com/aws/session-manager-plugin/src/sessionmanagerplugin/session/shellsession"
+	"github.com/solidassassin/session-manager-plugin/src/sessionmanagerplugin/session"
+	_ "github.com/solidassassin/session-manager-plugin/src/sessionmanagerplugin/session/portsession"
+	_ "github.com/solidassassin/session-manager-plugin/src/sessionmanagerplugin/session/shellsession"
 )
 
 func main() {

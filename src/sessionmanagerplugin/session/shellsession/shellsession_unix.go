@@ -24,8 +24,8 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/aws/session-manager-plugin/src/log"
-	"github.com/aws/session-manager-plugin/src/message"
+	"github.com/solidassassin/session-manager-plugin/src/log"
+	"github.com/solidassassin/session-manager-plugin/src/message"
 )
 
 // disableEchoAndInputBuffering disables echo to avoid double echo and disable input buffering

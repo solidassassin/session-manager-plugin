@@ -15,11 +15,11 @@
 package portsession
 
 import (
-	"github.com/aws/session-manager-plugin/src/communicator/mocks"
-	"github.com/aws/session-manager-plugin/src/datachannel"
-	"github.com/aws/session-manager-plugin/src/log"
-	"github.com/aws/session-manager-plugin/src/message"
-	"github.com/aws/session-manager-plugin/src/sessionmanagerplugin/session"
+	"github.com/solidassassin/session-manager-plugin/src/communicator/mocks"
+	"github.com/solidassassin/session-manager-plugin/src/datachannel"
+	"github.com/solidassassin/session-manager-plugin/src/log"
+	"github.com/solidassassin/session-manager-plugin/src/message"
+	"github.com/solidassassin/session-manager-plugin/src/sessionmanagerplugin/session"
 )
 
 var (

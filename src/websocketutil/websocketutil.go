@@ -17,8 +17,8 @@ package websocketutil
 import (
 	"errors"
 
-	"github.com/aws/session-manager-plugin/src/log"
 	"github.com/gorilla/websocket"
+	"github.com/solidassassin/session-manager-plugin/src/log"
 )
 
 // IWebsocketUtil is the interface for the websocketutil.
