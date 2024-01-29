@@ -85,6 +85,7 @@ type Session struct {
 	SessionType           string
 	SessionProperties     interface{}
 	DisplayMode           sessionutil.DisplayMode
+	MuxKeepAlive          bool
 }
 
 // startSession create the datachannel for session
