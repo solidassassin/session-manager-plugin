@@ -91,12 +91,12 @@ func (p *MuxPortForwarding) Stop() {
 }
 
 // InitializeStreams initializes i/o streams
-func (p *MuxPortForwarding) InitializeStreams(log log.T, agentVersion string) (err error) {
+func (p *MuxPortForwarding) InitializeStreams(log log.T, agentVersion string, muxKeepAlive bool) (err error) {
 
 	p.handleControlSignals(log)
 	p.socketFile = getUnixSocketPath(p.sessionId, os.TempDir(), "session_manager_plugin_mux.sock")
 
-	if err = p.initialize(log, agentVersion); err != nil {
+	if err = p.initialize(log, agentVersion, muxKeepAlive); err != nil {
 		p.cleanUp()
 	}
 	return
@@ -143,7 +143,7 @@ func (p *MuxPortForwarding) cleanUp() {
 }
 
 // initialize opens a network connection that acts as smux client
-func (p *MuxPortForwarding) initialize(log log.T, agentVersion string) (err error) {
+func (p *MuxPortForwarding) initialize(log log.T, agentVersion string, muxKeepAlive bool) (err error) {
 
 	// open a network listener
 	var listener net.Listener
@@ -169,8 +169,10 @@ func (p *MuxPortForwarding) initialize(log log.T, agentVersion string) (err erro
 		} else {
 			smuxConfig := smux.DefaultConfig()
 			if version.DoesAgentSupportDisableSmuxKeepAlive(log, agentVersion) {
-				// Disable smux KeepAlive or else it breaks Session Manager idle timeout.
-				smuxConfig.KeepAliveDisabled = true
+				if !muxKeepAlive {
+					// Disable smux KeepAlive or else it breaks Session Manager idle timeout.
+					smuxConfig.KeepAliveDisabled = true
+				}
 			}
 			if muxSession, err := smux.Client(muxConn, smuxConfig); err != nil {
 				return err
