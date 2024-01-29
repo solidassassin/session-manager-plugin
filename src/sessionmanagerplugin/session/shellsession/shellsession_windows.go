@@ -21,9 +21,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/aws/session-manager-plugin/src/log"
-	"github.com/aws/session-manager-plugin/src/message"
 	"github.com/eiannone/keyboard"
+	"github.com/solidassassin/session-manager-plugin/src/log"
+	"github.com/solidassassin/session-manager-plugin/src/message"
 )
 
 // Byte array for key inputs

@@ -29,14 +29,14 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/kms/kmsiface"
-	"github.com/aws/session-manager-plugin/src/communicator"
-	"github.com/aws/session-manager-plugin/src/config"
-	"github.com/aws/session-manager-plugin/src/encryption"
-	"github.com/aws/session-manager-plugin/src/log"
-	"github.com/aws/session-manager-plugin/src/message"
-	"github.com/aws/session-manager-plugin/src/service"
-	"github.com/aws/session-manager-plugin/src/version"
 	"github.com/gorilla/websocket"
+	"github.com/solidassassin/session-manager-plugin/src/communicator"
+	"github.com/solidassassin/session-manager-plugin/src/config"
+	"github.com/solidassassin/session-manager-plugin/src/encryption"
+	"github.com/solidassassin/session-manager-plugin/src/log"
+	"github.com/solidassassin/session-manager-plugin/src/message"
+	"github.com/solidassassin/session-manager-plugin/src/service"
+	"github.com/solidassassin/session-manager-plugin/src/version"
 	"github.com/twinj/uuid"
 )
 

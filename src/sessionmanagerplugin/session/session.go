@@ -23,16 +23,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aws/session-manager-plugin/src/config"
+	"github.com/solidassassin/session-manager-plugin/src/config"
 
 	"github.com/aws/aws-sdk-go/service/ssm"
-	"github.com/aws/session-manager-plugin/src/datachannel"
-	"github.com/aws/session-manager-plugin/src/log"
-	"github.com/aws/session-manager-plugin/src/message"
-	"github.com/aws/session-manager-plugin/src/retry"
-	"github.com/aws/session-manager-plugin/src/sdkutil"
-	"github.com/aws/session-manager-plugin/src/sessionmanagerplugin/session/sessionutil"
-	"github.com/aws/session-manager-plugin/src/version"
+	"github.com/solidassassin/session-manager-plugin/src/datachannel"
+	"github.com/solidassassin/session-manager-plugin/src/log"
+	"github.com/solidassassin/session-manager-plugin/src/message"
+	"github.com/solidassassin/session-manager-plugin/src/retry"
+	"github.com/solidassassin/session-manager-plugin/src/sdkutil"
+	"github.com/solidassassin/session-manager-plugin/src/sessionmanagerplugin/session/sessionutil"
+	"github.com/solidassassin/session-manager-plugin/src/version"
 	"github.com/twinj/uuid"
 )
 

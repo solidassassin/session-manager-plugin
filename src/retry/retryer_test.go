@@ -19,7 +19,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/aws/session-manager-plugin/src/config"
+	"github.com/solidassassin/session-manager-plugin/src/config"
 	"github.com/stretchr/testify/assert"
 )
 

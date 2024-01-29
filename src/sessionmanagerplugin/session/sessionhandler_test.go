@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"testing"
 
-	wsChannelMock "github.com/aws/session-manager-plugin/src/communicator/mocks"
-	"github.com/aws/session-manager-plugin/src/config"
-	"github.com/aws/session-manager-plugin/src/datachannel"
-	dataChannelMock "github.com/aws/session-manager-plugin/src/datachannel/mocks"
-	"github.com/aws/session-manager-plugin/src/message"
+	wsChannelMock "github.com/solidassassin/session-manager-plugin/src/communicator/mocks"
+	"github.com/solidassassin/session-manager-plugin/src/config"
+	"github.com/solidassassin/session-manager-plugin/src/datachannel"
+	dataChannelMock "github.com/solidassassin/session-manager-plugin/src/datachannel/mocks"
+	"github.com/solidassassin/session-manager-plugin/src/message"
 	"github.com/stretchr/testify/mock"
 
 	"github.com/stretchr/testify/assert"
